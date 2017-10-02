@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.ConvertSpeedUnits", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.RectangleProperties", "RectangleProperties\12.RectangleProperties.csproj", "{910BD188-8404-4C55-AE51-1A1879051105}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.VowelOrDigit", "VowelOrDigit\13.VowelOrDigit.csproj", "{F63B64C9-1BA3-4A0D-A2B2-1F0FD35C10AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.IntegerToHexAndBinary", "IntegerToHexAndBinary\14.IntegerToHexAndBinary.csproj", "{0C14864E-A81A-4D8F-B571-C7E2DF66EB2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,14 @@ Global
 		{910BD188-8404-4C55-AE51-1A1879051105}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{910BD188-8404-4C55-AE51-1A1879051105}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{910BD188-8404-4C55-AE51-1A1879051105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F63B64C9-1BA3-4A0D-A2B2-1F0FD35C10AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F63B64C9-1BA3-4A0D-A2B2-1F0FD35C10AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F63B64C9-1BA3-4A0D-A2B2-1F0FD35C10AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F63B64C9-1BA3-4A0D-A2B2-1F0FD35C10AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C14864E-A81A-4D8F-B571-C7E2DF66EB2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C14864E-A81A-4D8F-B571-C7E2DF66EB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C14864E-A81A-4D8F-B571-C7E2DF66EB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C14864E-A81A-4D8F-B571-C7E2DF66EB2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,13 +6,13 @@
     {
         public static void Main()
         {
-            long X1 = long.Parse(Console.ReadLine());
-            long Y1 = long.Parse(Console.ReadLine());
-            long X2 = long.Parse(Console.ReadLine());
-            long Y2 = long.Parse(Console.ReadLine());
+            double X1 = double.Parse(Console.ReadLine());
+            double Y1 = double.Parse(Console.ReadLine());
+            double X2 = double.Parse(Console.ReadLine());
+            double Y2 = double.Parse(Console.ReadLine());
 
-            double firstDistance = GetDistanceToZero(X1, Y1); Console.WriteLine(firstDistance);
-            double secondDistance = GetDistanceToZero(X2, Y2); Console.WriteLine(secondDistance);
+            double firstDistance = GetDistanceToZero(X1, Y1);// Console.WriteLine(firstDistance);
+            double secondDistance = GetDistanceToZero(X2, Y2);// Console.WriteLine(secondDistance);
 
             if (firstDistance <= secondDistance)
             {
@@ -24,7 +24,7 @@
             }
         }
 
-        static double GetDistanceToZero(long X, long Y)
+        static double GetDistanceToZero(double X, double Y)
         {
             return Math.Sqrt(X * X + Y * Y);            
         }

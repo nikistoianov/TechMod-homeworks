@@ -12,7 +12,7 @@
             
             for (int i = 1; i <= num; i++)
             {
-                if (IsPalindrome(i) && (SumOfDigits(i) % 7 == 0) && ContainsEvenDigit(i))
+                if ((SumOfDigits(i) % 7 == 0) && IsPalindrome(i) && ContainsEvenDigit(i))
                 {
                     Console.WriteLine(i);
                 }

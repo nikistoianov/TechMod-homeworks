@@ -16,14 +16,14 @@ public class Substring_fixed
             {
                 hasMatch = true;
 
-                int endIndex = jump + 1;
+                int endIndex = jump + i + 1;
 
                 if (endIndex > text.Length)
                 {
                     endIndex = text.Length;
                 }
 
-                string matchedString = text.Substring(i, endIndex);
+                string matchedString = text.Substring(i, endIndex - i);
                 Console.WriteLine(matchedString);
                 i += jump;
             }

@@ -17,7 +17,7 @@ namespace СръбскоUnleashed
             while (input != "End")
             {
                 string singer = "", venue = "";
-                short ticketsPrize = 0;
+                int ticketsPrize = 0;
                 int ticketsCount = 0;
                 if (InputAccepted(input, ref singer, ref venue, ref ticketsPrize, ref ticketsCount))
                 {
@@ -58,25 +58,26 @@ namespace СръбскоUnleashed
             }
         }
         
-        private static bool InputAccepted(string inputLine, ref string singer, ref string venue, ref short ticketsPrize, ref int ticketsCount)
+        private static bool InputAccepted(string inputLine, ref string singer, ref string venue, ref int ticketsPrize, ref int ticketsCount)
         {
-            //string[] arr = inputLine.Split();
-            //if (arr.Length < 4)
-            //{
-            //    return false;
-            //}
+            try
+            {
+                string[] arr = inputLine.Split(new string[] { " @" }, StringSplitOptions.None);
+                if (arr.Length < 2) return false;
 
-            string[] arr = inputLine.Split(new string[] { " @" }, StringSplitOptions.None);
-            if (arr.Length < 2) return false;
-            
-            singer = arr[0];
-            arr = arr[1].Split();
-            if (arr.Length < 3) return false;
+                singer = arr[0];
+                arr = arr[1].Split();
+                if (arr.Length < 3) return false;
 
-            venue = string.Join(" ", arr.Take(arr.Length - 2));
-            ticketsPrize = short.Parse(arr[arr.Length - 2]);
-            ticketsCount = int.Parse(arr.Last());
-            return true;
+                venue = string.Join(" ", arr.Take(arr.Length - 2));
+                ticketsPrize = int.Parse(arr[arr.Length - 2]);
+                ticketsCount = int.Parse(arr.Last());
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
     }
 }

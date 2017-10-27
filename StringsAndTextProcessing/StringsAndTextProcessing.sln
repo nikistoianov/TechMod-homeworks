@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.SumBigNumbers", "SumBigN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.MultiplyBigNumber", "MultiplyBigNumber\07.MultiplyBigNumber.csproj", "{4F29AFE3-B15C-4DDE-A5A1-1ABE376A3FB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.LettersChangeNumbers", "LettersChangeNumbers\08.LettersChangeNumbers.csproj", "{4C0C35A1-88CA-4432-ADAB-E6E0A6FAEF4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{4F29AFE3-B15C-4DDE-A5A1-1ABE376A3FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F29AFE3-B15C-4DDE-A5A1-1ABE376A3FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F29AFE3-B15C-4DDE-A5A1-1ABE376A3FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0C35A1-88CA-4432-ADAB-E6E0A6FAEF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0C35A1-88CA-4432-ADAB-E6E0A6FAEF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0C35A1-88CA-4432-ADAB-E6E0A6FAEF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0C35A1-88CA-4432-ADAB-E6E0A6FAEF4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

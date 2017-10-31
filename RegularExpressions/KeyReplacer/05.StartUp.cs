@@ -13,17 +13,20 @@ namespace KeyReplacer
         {
             string keyString = Console.ReadLine();
             string text = Console.ReadLine();
-            string[] keys = Regex.Split(keyString, $"[|\\<]");
+            //string[] keys = Regex.Split(keyString, $"[|\\<]");
+            string startKey = Regex.Match(keyString, @"^([A-Za-z]+)[\|<\\]").Groups[1].Value;
+            string endKey = Regex.Match(keyString, @"[\|<\\]([A-Za-z]+)$").Groups[1].Value;
+
             string result = "";
 
-            if (!Regex.IsMatch(keys[0], @"^[A-Za-z]+$"))
-            {
-                //throw new Exception();
-                Console.WriteLine("Empty result");
-                return;
-            }
+            //if (!Regex.IsMatch(keys[0], @"^[A-Za-z]+$"))
+            //{
+            //    //throw new Exception();
+            //    Console.WriteLine("Empty result");
+            //    return;
+            //}
 
-            string pattern = $@"{keys[0]}(.*?){keys.Last()}";
+            string pattern = $@"{startKey}(.*?){endKey}";
             foreach (Match m in Regex.Matches(text, pattern))
             {
                 //Console.Write(m.Groups[1]);

@@ -18,6 +18,12 @@ function Calculator(leftOperand, operator, rightOperand) {
             case "/":
                 result = this.leftOperand / this.rightOperand;
                 break;
+            case "%":
+                result = this.leftOperand % this.rightOperand;
+                break;
+            case "^":
+                result = Math.pow( this.leftOperand, this.rightOperand );
+                break;
         }
         return result;
     }

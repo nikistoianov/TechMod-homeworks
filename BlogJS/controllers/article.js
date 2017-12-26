@@ -34,6 +34,7 @@ module.exports = {
                 }
             });
         })
+
     },
 
     details: (req, res) => {
@@ -54,5 +55,6 @@ module.exports = {
             .catch(err => {
                 res.redirect('/', {error: 'Cannot find article with id!'})
             })
+
     }
 }

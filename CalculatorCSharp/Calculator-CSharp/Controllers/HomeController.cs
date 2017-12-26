@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using Calculator_CSharp.Models;
+using System;
 
 namespace Calculator_CSharp.Controllers
 {
@@ -35,7 +36,19 @@ namespace Calculator_CSharp.Controllers
                     result = calculator.LeftOperand * calculator.RightOperand;
                     break;
                 case "/":
-                    result = calculator.LeftOperand / calculator.RightOperand;
+                    if (calculator.RightOperand != 0)
+                    {
+                        result = calculator.LeftOperand / calculator.RightOperand;
+                    }                    
+                    break;
+                case "^":
+                    result = (decimal)Math.Pow((double)calculator.LeftOperand, (double)calculator.RightOperand);
+                    break;
+                case "%":
+                    if (calculator.RightOperand != 0)
+                    {
+                        result = calculator.LeftOperand % calculator.RightOperand;
+                    }                    
                     break;
             }
 
